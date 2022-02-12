@@ -1,0 +1,51 @@
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  animation: heart linear infinite 0.8s;
+}
+
+@keyframes heart {
+  0% {
+    transform: translate(-50%, -50%) scale(1.07);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+#img1 {
+  background-image: url("./img/1.jpg");
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+}
+
+#img2 {
+  background-image: url("./img/2.jpg");
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+}
